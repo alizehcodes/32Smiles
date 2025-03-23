@@ -1,0 +1,101 @@
+*{
+    scrollbar-width: thin;
+    padding: 0;
+    margin: 0;
+}
+
+/* Breadcrumb  */
+
+.breadcrumb {
+    background-color: rgb(245, 246, 250);
+    text-align: center;
+}
+@media screen and (max-width: 1399px) {
+    .breadcrumb {
+        padding: 80px 0;
+    }
+}
+.breadcrumb-title {
+    font-size: 54px;
+    font-weight: 650;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding: 100px 70px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+@media screen and (max-width: 1399px) {
+    .breadcrumb-title {
+        font-size: 50px;
+    }
+}
+.breadcrumb-nav {
+    font-weight: 500;
+}
+.breadcrumb-nav a {
+    color: #fff;
+}
+.breadcrumb-nav a i {
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+.breadcrumb-nav .current-page {
+    color: #fff;
+}
+.breadcrumb-nav .current-page .dvdr {
+    padding: 0 10px;
+    color: #fff;
+}
+.breadcrumb {
+    background: url(images/breadcrumb-image.svg), #0e384c;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto;
+    padding: 100px 0;
+    color: #fff;
+}
+
+
+.error-page {
+    padding: 100px 0;
+}
+.error-page-image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.error-page-image img {
+    max-width: 50%;
+}
+.error-page .error-page-content {
+    text-align: center;
+}
+.error-page-content-heading {
+    margin-bottom: 30px;
+}
+.error-page-content-heading h2 {
+    font-size: 40px;
+    color: #0e384c;
+}
+.error-page-content-body p {
+    margin-bottom: 30px;
+    color: #527282;
+}
+.btn-default {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.1em;
+    text-transform: capitalize;
+    background: #1e84b5;
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 17px 30px 17px 18px;
+    border: none;
+    transition: all 0.5sease-in-out;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-default:hover{
+    color: #ffffff;
+}

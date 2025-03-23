@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <title>Header</title>
+</head>
+<body>
+    <!-------------- header section start --------------->
+    <nav>
+        
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                32<span>Smiles</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                  <a href="#">Services</a>
+                  <div class="dropdown-content" style="color: #fff;">
+                      <a href="#teeth-whitening">Professional Education</a>
+                      <a href="#gum-treatment">Patient Education</a>
+                      <a href="#root-canal">Research</a>
+                      <a href="shop.html">Products</a>
+                  </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Blog</a>
+                  <div class="dropdown-content">
+                    <a href="blog.html">Blog</a>
+                    <a href="blog-details.html">Blog Details</a>
+                </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Shop</a>
+                  <div class="dropdown-content">
+                    <a href="shop.html">Shop</a>
+                    <a href="product.html">Product Details</a>
+                </div>
+              </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="menu-right">
+            <a href="contact.html" class="book-btn">Login</a>
+        </div>
+        <button id="toggleBtn" style="font-size: 20px;">🌙</button>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+        
+    </nav>
+    <!-------------- header section end ----------------->
+</body>
+</html>

@@ -1,0 +1,226 @@
+*{
+    scrollbar-width: thin;
+    padding: 0;
+    margin: 0;
+}
+
+/* Breadcrumb  */
+
+.breadcrumb {
+    background-color: rgb(245, 246, 250);
+    text-align: center;
+}
+@media screen and (max-width: 1399px) {
+    .breadcrumb {
+        padding: 80px 0;
+    }
+}
+.breadcrumb-title {
+    font-size: 54px;
+    font-weight: 650;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding: 100px 70px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+@media screen and (max-width: 1399px) {
+    .breadcrumb-title {
+        font-size: 50px;
+    }
+}
+.breadcrumb-nav {
+    font-weight: 500;
+}
+.breadcrumb-nav a {
+    color: #fff;
+}
+.breadcrumb-nav a i {
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+.breadcrumb-nav .current-page {
+    color: #fff;
+}
+.breadcrumb-nav .current-page .dvdr {
+    padding: 0 10px;
+    color: #fff;
+}
+.breadcrumb {
+    background: url(images/breadcrumb-image.svg), #0e384c;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto;
+    padding: 100px 0;
+    color: #fff;
+}
+
+
+.page-faqs {
+    padding: 100px 0;
+}
+.row > * {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.page-faqs-catagery {
+    margin-right: 30px;
+}
+.page-faqs .page-faq-accordion {
+    margin-bottom: 60px;
+}
+.page-faqs .faq-accordion-title {
+    margin-bottom: 30px;
+}
+.page-faqs .faq-accordion-title h2 {
+    font-size: 40px;
+    color: #0e384c;
+}
+accordion:last-child {
+    margin-bottom: 0;
+}
+
+.page-faqs .page-faq-accordion {
+    margin-bottom: 60px;
+}
+.page-faq-accordion .accordion-item {
+    border: 1px solid #0e384c12;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 0;
+    transition: all 0.3sease-in-out;
+    overflow: hidden;
+}
+.accordion-header {
+    margin-bottom: 0;
+}
+.page-faq-accordion .accordion-header .accordion-button.collapsed {
+    background-color: #ffffff;
+    color: #0e384c;
+}
+.page-faq-accordion .accordion-header .accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
+    background-color:#1e84b5;
+    color: #ffffff;
+    padding: 20px 50px 20px 20px;
+    transition: all 0.3sease-in-out;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+.page-faq-accordion .accordion-item .accordion-body {
+    background-color: #1e84b5;
+    padding: 20px 50px 20px 20px;
+}
+.page-faq-accordion .accordion-item .accordion-body p {
+    color: #ffffff;
+    margin: 0;
+}
+.page-faq-accordion .accordion-item .accordion-button::after, .page-faq-accordion .accordion-item .accordion-button.collapsed::after {
+    content: '\f068';
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    bottom: auto;
+    transform: translate(0px, -10px);
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: #ffffff;
+}
+.page-faq-accordion .accordion-button:not(.collapsed) {
+    background-color: #1e84b5;
+    color: #ffffff;
+    border-bottom: 1px solid #0e384c12;
+}
+.page-faq-accordion .accordion-item .accordion-button.collapsed::after {
+    content: '\f067';
+    color: #0e384c;
+}
+.row > * {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.faq-sidebar {
+    position: sticky;
+    top: 20px;
+}
+.faq-catagery-list {
+    background-color: #f9fcff;
+    border: 1px solid #0e384c12;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 40px;
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+.faq-catagery-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.faq-catagery-list ul li {
+    margin-bottom: 20px;
+}
+.faq-catagery-list ul li a {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #0e384c12;
+    color: #527282;
+    border-radius: 14px;
+    text-transform: capitalize;
+    padding: 15px;
+    transition: all 0.3sease-in-out;
+}
+.faq-catagery-list ul li a::after {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: normal;
+    color: #0e384c;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3sease-in-out;
+}
+.section-cta-box {
+    display: flex;
+    background-color:#ffffff;
+    box-shadow: 0px 10px 30px 0px #00000008;
+    border: 1px solid #0e384c12;
+    border-radius: 40px;
+    padding: 25px;
+}
+.section-cta-box .icon-box {
+    margin-right: 30px;
+}
+.section-cta-box .icon-box img {
+    max-width: 60px;
+}
+.section-cta-content {
+    width: calc(100% - 90px);
+}
+.section-cta-content p {
+    margin-bottom: 10px;
+}
+.section-cta-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0e384c;
+}

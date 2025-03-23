@@ -1,0 +1,115 @@
+@media screen and (max-width: 991px) {
+    /* breadcrumb CSS */
+    .rv-breadcrumb {
+        padding: 60px 0;
+    }
+
+    .rv-breadcrumb__title {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1399px) {
+    /* breadcrumb CSS */
+    .rv-breadcrumb {
+        padding: 80px 0;
+    }
+
+    .rv-breadcrumb__title {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    /* breadcrumb CSS */
+    .rv-breadcrumb__title {
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .rv-breadcrumb__title {
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    /* about us CSS */
+    .container1{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    
+    }
+
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    
+    }
+
+    .image-section{
+        float: none;
+        width: 100%;
+       
+    }
+
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+
+    }
+
+    .content-section .content .button{
+        text-align: center;
+    
+    }
+
+    .content-section .content .button a{
+        padding: 9px 30px;
+
+    }
+
+    .content-section .social{
+        text-align: center;
+    }
+    
+    /* cards CSS */
+    .card-wraper{
+        margin: 0 10px 25px;
+      }
+
+      .card-wraper .swiper-slide-button{
+        display: none;
+      }
+
+}
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+

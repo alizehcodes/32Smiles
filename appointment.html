@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="error.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="https://codebasket.xyz/template/mindmed-html/assets/img/tooth-icon-2.png" type="image/x-icon">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <title>32 Smiles</title>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <!-------------- header section start --------------->
+    <nav>
+          
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                32<span>Smiles</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About Us</a>
+                  <div class="dropdown-content" style="color: #fff;">
+                    <a href="about.html">About Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="team-details.html">Team Details</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                  <a href="#">Services</a>
+                  <div class="dropdown-content">
+                      <a href="services.html">Services</a>
+                      <a href="professional.html">Professional Education</a>
+                      <a href="patient.html">Patient Education</a>
+                      <a href="research.html">Research</a>
+                      <a href="faqs.html">FAQ's</a>
+                      <a href="error.html">404</a>
+                  </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Blog</a>
+                  <div class="dropdown-content">
+                    <a href="blog.html">Blog</a>
+                    <a href="blog-details.html">Blog Details</a>
+                </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Shop</a>
+                  <div class="dropdown-content">
+                    <a href="shop.html">Shop</a>
+                    <a href="product.html">Product Details</a>
+                </div>
+              </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="menu-right">
+            <a href="appointment.html" class="book-btn">Appointment</a>
+        </div>
+        <button id="toggleBtn" style="font-size: 20px; display: none;">🌙</button>
+        <i class="fa-solid fa-bars hamburg"></i>
+    </div>
+    <button class="hamburg"><i class="fa fa-bars hamburg"></i></button>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel"></i>
+            </div>
+        </div>
+        
+    </nav>  
+    <!-------------- header section end ----------------->
+
+    <!-------------- Breadcrumb section start ----------->
+    <div class="breadcrumb pt-120 pb-120" data-aos="fade-up">
+        <div class="container">
+            <h1 class="breadcrumb-title">Book Appointment</h1>
+            <ul class="breadcrumb-nav d-flex justify-content-center">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-sharp fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="current-page">
+                    <span class="dvdr"> /</span>
+                    <span>Appointment</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-------------- Breadcrumb section end ------------->
+
+    <!---------- page book appointment section start -------->
+    <div class="page-book-appointment" data-aos="fade-up">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <!-- section title start  -->
+                    <div class="section-title" data-aos="fade-up">
+                        <h3 class="wow">Book Your Appointment</h3>
+                        <h2 class="text-anime-style-3" data-aos="fade-up">
+                            <div class="split-line" style="display: block; text-align: center; position: relative;">Book your dental visit online with</div>
+                            <div class="split-line" style="display: block; text-align: center; position: relative;">32 Smiles</div>
+                        </h2>
+                    </div>
+                    <!-- section title end  -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- appointment form start  -->
+                    <div class="appointment-form" data-aos="fade-up">
+                        <div class="appointment-form-content">
+                            <p>Fill out the form below to request your dental appointment. We'll confirm your time and send you a reminder.</p>
+                        </div>
+                        <!-- form start  -->
+                        <form action="#" id="appointmentForm" method="post" data-aos="fade-up" novalidate>
+                            <div class="row">
+                                <div class="form-group col-lg-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Patient's Name" required>
+                                    <p class="error-message" id="name-error"></p>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-6 mb-4">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
+                                    <p class="error-message" id="email-error"></p>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" name="location" id="location" placeholder="Enter Your Location" required>
+                                    <p class="error-message" id="location-error"></p>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" name="record" id="record" placeholder="Medical Record No." required>
+                                    <p class="error-message" id="record-error"></p>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-6 mb-4">
+                                    <input type="date" class="form-control" name="date" id="date" required>
+                                    <p class="error-message" id="date-error"></p>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-6 mb-4">
+                                    <input type="time" class="form-control" name="time" id="time" required>
+                                    <p class="error-message" id="time-error"></p>
+                                </div>
+                                <div class="appointment-form-title">
+                                    <h3>Reason For Visit</h3>
+                                </div>
+                                <div class="appointment-reason">
+                                    <div class="reason-box">
+                                        <input type="radio" id="routine" name="reason" value="Routine Checkup" checked>
+                                        <label for="routine">Routine Checkup</label>
+                                    </div>
+                                    <div class="reason-box">
+                                        <input type="radio" id="new" name="reason" value="New Patient Visit">
+                                        <label for="new">New Patient Visit</label>
+                                    </div>
+                                    <div class="reason-box">
+                                        <input type="radio" id="specific" name="reason" value="Specific Concern">
+                                        <label for="specific">Specific Concern</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn-default" type="submit">
+                                        Book Appointment
+                                    </button>
+                                    <div class="h3 hidden" id="msgSubmit"></div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <!-- form end  -->
+                    </div>
+                    <!-- appointment form end ---->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- footer section start -------------->
+    <footer class="rv-29-footer-sec rv-29-footer" >
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rv-28-footer__logo wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <a href="index.html">
+                            32<span>Smiles</span>
+                        </a>
+                        <p class="rv-26-logo-text">
+                        At 32Smiles Dental Hospital, we believe that a healthy smile is a happy smile! Our team of expert dentists is dedicated to providing high-quality, pain-free, and affordable dental care in a friendly and comfortable environment.
+                        </p>
+                        <a href="tel:+0123456789">
+                            <i class="fa fa-phone text-white"></i>
+                            +0123 456 789
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+                    <div class="rv-28-footer__links wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Quick Links</h4>
+                        <ul class="rv-28-footer__ul">
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Our Services</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="faqs.html">FAQs</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="copyright.html">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+                    <div class="rv-28-footer__courses wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Services</h4>
+                        <ul class="rv-28-footer__ul">
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Dental Care</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Cosmetic</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Implants</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Whitening</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Braces</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rv-28-footer__newsletters wow fadeInUp" data-wow-delay="0.55s" style="visibility: visible; animation-delay: 0.55s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Signup</h4>
+                        <div class="footer_newsletter">
+                            <form action="#" class="d-flex" id="newsletterForm">
+                                <input type="email" id="emailInput" required placeholder="Your Email..">
+                                <button type="submit" class="footer_newsletter-btn">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                                <p id="error-message" style="color: red; display: none; font-size: 14px; margin-top: 5px;"></p>
+                            </form>
+                        </div>
+                        <div class="follow-us">
+                            <h6 class="text-white">Follow Us</h6>
+                            <div class="follow-us-ul d-flex align-items-center">
+                                <a href="https://www.facebook.com/%40DentalNewsPk/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/dentaleducationhub/?originalSubdomain=pk">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rv-28-small-footer">
+                    <div class="copyright">
+                        @ 
+                        <a href="#">32smiles</a>
+                        All Rights Reserved
+                    </div>
+                    <div class="privacy-policy">
+                        <a href="copyright.html">Privacy Policy</a>
+                        |
+                        <a href="copyright.html">Terms of Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------- footer section end ---------------->
+
+    <!-- Back to top button  -->
+    <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Back to top button end  -->
+
+    <!-- JavaScript  -->
+    <script>
+
+// backtotopbutton --------------->
+
+const backToTopButton = document.getElementById("backToTop");
+
+// button show hoga
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// top par
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+// Cursor ----------------->
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cursor = document.querySelector(".custom-cursor");
+    const zoomElements = document.querySelectorAll(".text-zoom");
+
+    document.addEventListener("mousemove", function (e) {
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+
+    document.addEventListener("mousedown", function () {
+        cursor.classList.add("cursor-grow");
+    });
+
+    document.addEventListener("mouseup", function () {
+        cursor.classList.remove("cursor-grow");
+    });
+
+    zoomElements.forEach(element => {
+        element.addEventListener("mouseenter", function () {
+            this.style.transform = "scale(1.2)";
+        });
+
+        element.addEventListener("mouseleave", function () {
+            this.style.transform = "scale(1)";
+        });
+    });
+});
+
+// Form validation 
+    
+    document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const locationInput = document.getElementById("location");
+    const recordInput = document.getElementById("record");
+    const dateInput = document.getElementById("date");
+    const timeInput = document.getElementById("time");
+
+    const nameError = document.getElementById("name-error");
+    const emailError = document.getElementById("email-error");
+    const locationError = document.getElementById("location-error");
+    const recordError = document.getElementById("record-error");
+    const dateError = document.getElementById("date-error");
+    const timeError = document.getElementById("time-error");
+
+    let isValid = true;
+
+    if (nameInput.value.trim().length < 3) {
+        nameError.textContent = "Name must be at least 3 characters.";
+        nameError.style.display = "block";
+        isValid = false;
+    } else {
+        nameError.style.display = "none";
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailInput.value)) {
+        emailError.textContent = "Please enter a valid email address.";
+        emailError.style.display = "block";
+        isValid = false;
+    } else {
+        emailError.style.display = "none";
+    }
+
+    if (locationInput.value.trim() === "") {
+        locationError.textContent = "Location is required.";
+        locationError.style.display = "block";
+        isValid = false;
+    } else {
+        locationError.style.display = "none";
+    }
+
+    if (recordInput.value.trim().length < 5) {
+        recordError.textContent = "Medical Record No. must be at least 5 characters.";
+        recordError.style.display = "block";
+        isValid = false;
+    } else {
+        recordError.style.display = "none";
+    }
+
+    const today = new Date().toISOString().split('T')[0];
+    if (dateInput.value < today) {
+        dateError.textContent = "Date cannot be in the past.";
+        dateError.style.display = "block";
+        isValid = false;
+    } else {
+        dateError.style.display = "none";
+    }
+
+    if (timeInput.value === "") {
+        timeError.textContent = "Please select a time.";
+        timeError.style.display = "block";
+        isValid = false;
+    } else {
+        timeError.style.display = "none";
+    }
+
+    if (isValid) {
+        alert("Appointment booked successfully!");
+        this.reset();
+    }
+});
+
+        
+// Footer form validation ------->
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const emailInput = document.getElementById("emailInput");
+    const errorMessage = document.getElementById("error-message");
+
+    // Regular expression to validate email format
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailPattern.test(emailInput.value)) {
+        errorMessage.style.display = "none";
+        alert("Signup successful! ✅");
+        emailInput.value = ""; // Clear input after successful validation
+    } else {
+        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.style.display = "block";
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleBtn");
+    const navLinks = document.querySelector(".dropdown");
+    const hamburgIcon = document.querySelector(".hamburg");
+    const cancelIcon = document.querySelector(".cancel");
+    const dropdownLists = document.querySelectorAll(".dropdown-list");
+    const navContainerLinks = document.querySelector(".nav-container .links");
+    const submenuButtons = document.querySelectorAll(".submenu-toggle");
+
+    function updateMenuDisplay() {
+        if (window.innerWidth <= 768) {
+            hamburgIcon.style.display = "block";
+            cancelIcon.style.display = "none";
+            navContainerLinks.style.display = "none";
+            navLinks.style.display = "none";  // Ensure dropdown is hidden initially
+        } else {
+            hamburgIcon.style.display = "none";
+            cancelIcon.style.display = "none";
+            navContainerLinks.style.display = "flex";
+            navLinks.style.display = "none";  // Hide dropdown for large screens
+        }
+    }
+
+    updateMenuDisplay();  // Call on page load
+
+    // Open mobile menu
+    hamburgIcon.addEventListener("click", function () {
+        navLinks.style.display = "block";
+        setTimeout(() => {
+            navLinks.style.transform = "translateY(0)";
+        }, 10);
+        hamburgIcon.style.display = "none";
+        cancelIcon.style.display = "block";
+    });
+
+    // Close mobile menu
+    cancelIcon.addEventListener("click", function () {
+        navLinks.style.transform = "translateY(-500px)";
+        setTimeout(() => {
+            navLinks.style.display = "none";
+        }, 300);
+        cancelIcon.style.display = "none";
+        hamburgIcon.style.display = "block";
+    });
+
+    // Submenu toggle functionality
+    submenuButtons.forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        });
+    });
+
+    // Handle screen resize for responsiveness
+    window.addEventListener("resize", updateMenuDisplay);
+});
+    </script>
+    
+    <!-- Back to top button  -->
+    <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Back to top button end  -->
+    
+        
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({duration: 1500});
+    </script>
+</body>
+</html>

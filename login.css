@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root {
+    --white-f: #ffffff;
+    --black-0: #000000;
+    --black: #050505;
+    --black-2: #1d1d1d;
+    --orange: #F2584C;
+    --green: #0F8C50;
+    --inter: "Inter", sans-serif;
+    --mulish: "Mulish", serif;
+    --newsreader: "Newsreader", serif;
+    --sahitya: "Sahitya", serif;
+    --philosopher: "Philosopher", sans-serif;
+    --oldenburg: "Oldenburg", serif;
+    --carolina-blue: hsl(281, 92%, 47%);
+    /* --royal-blue-light: hsl(225, 68%, 53%); */
+    --royal-blue-light: #38A9E0;
+    /* gradient color  */
+    --gradient: linear gradient(90deg, var(--carolina-blue) 0%, var(--royal-blue-light) 100%);
+}
+*{
+    scrollbar-width: thin;
+    padding: 0;
+    margin: 0;
+}
+a,
+i{
+    text-decoration: none;
+    transition: 0.4s ease;
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* background-color: #f5f8fb; */
+     /* Default cursor hide karna */
+}
+button {
+    outline: none;
+    border: none;
+}
+
+/* Header start  */
+
+nav{
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2117647059);
+    z-index: 2;
+    background: #0E3055;
+    opacity: 0.9;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.2117647059);
+}
+.logo{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #2f6aa8;
+}
+.logo span{
+    color: var(--royal-blue-light);
+    text-shadow: 0 0 10px #2f6aa8;
+}
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+.nav-container .links{
+    display: flex;
+    color: #000;
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s linear;
+}
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--royal-blue-light);
+    transition: 0.2s linear;
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+.nav-container .links a:hover{
+    color: var(--white-f);
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 20px black;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    display: flex;
+    color: var(--black-0);
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+.dropdown .links a:hover{
+    background-color: var(--royal-blue-light);
+}
+.menu-right {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.book-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--royal-blue-light);
+    padding: 12px 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--royal-blue-light);
+    transition: 0.3s all;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.book-btn:hover{
+    background: transparent;
+    border: 2px solid var(--royal-blue-light);
+    box-shadow: 0 0 12px var(--royal-blue-light);
+}
+.menu-right a {
+    color: white;
+}
+.dropdown-list {
+    position: relative;
+    color: #fff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #0E3055;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    backdrop-filter: blur(10);
+    border-radius: 8px;
+    border: 1px solid var(--royal-blue-light);
+    opacity: 0.8;
+    color: #fff;
+}
+.dropdown-content a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    z-index: 1;
+}
+.dropdown-list:hover .dropdown-content {
+    display: block;
+    color: #fff;
+}
+.dropdown-links{
+    color: #fff;
+}
+
+/* Breadcrumb  */
+
+.breadcrumb {
+    background-color: rgb(245, 246, 250);
+    text-align: center;
+}
+@media screen and (max-width: 1399px) {
+    .breadcrumb {
+        padding: 80px 0;
+    }
+}
+.breadcrumb-title {
+    font-size: 54px;
+    font-weight: 650;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.1);
+    display: inline-block;
+    padding: 100px 70px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+@media screen and (max-width: 1399px) {
+    .breadcrumb-title {
+        font-size: 50px;
+    }
+}
+.breadcrumb-nav {
+    font-weight: 500;
+}
+.breadcrumb-nav a {
+    color: rgb(93, 98, 108);
+}
+.breadcrumb-nav a i {
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+.breadcrumb-nav .current-page {
+    color: #794AFF;
+}
+.breadcrumb-nav .current-page .dvdr {
+    padding: 0 10px;
+    color: rgb(93, 98, 108);
+}
+
+/* Reggistration page css */
+
+.account-form-section {
+    padding: 120px 0;
+}
+@media screen and (max-width: 1399px) {
+    .account-form-section {
+        padding: 80px 0;
+    }
+}
+.account-form-section .auth-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2509803922);
+    padding: 50px 0;
+    width: 50%;
+    border-radius: 20px;
+}
+.account-form-section .auth-container form {
+    padding: 40px 40px 0;
+    display: grid;
+    grid-gap: 15px;
+    gap: 15px;
+    border-radius: 3px;
+    width: 100%;
+}
+.account-form-section .auth-container form input#login-password, .account-form-section .auth-container form input#login-username, .account-form-section .auth-container form input#register-email, .account-form-section .auth-container form input#register-password, .account-form-section .auth-container form input#REGISTRATION-username {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2509803922);
+    border-radius: 3px;
+    height: 45px;
+    padding: 0 20px;
+    outline: none;
+}
+.account-form-section .auth-container form .alternative-auth {
+    width: 100%;
+    text-align: end;
+}
+.account-form-section .auth-container form .alternative-auth a {
+    color: #794aff;
+}
+.account-form-section .auth-container form button.banner-btn.single-form-btn {
+    padding: 0 80px;
+    margin-top: 20px;
+    justify-self: center;
+    border-radius: 6px;
+    background-color: #222;
+    height: 45px;
+    line-height: 43px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #222;
+}
+.account-form-section .auth-container .other-option {
+    text-align: center;
+    padding-top: 20px;
+}
+.account-form-section .auth-container .other-option p {
+    font-size: 16px;
+    line-height: 100%;
+    color: #515151;
+    margin-top: -2px;
+    margin-bottom: 17px;
+}
+.account-form-section .auth-container .other-option a {
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+    font-size: 22px;
+    color: #222;
+}
+
+
+@media screen and (max-width: 991px) {
+    .account-form-section .auth-container {
+        width: 75%; /* Tablet screens ke liye width kam kar di */
+        padding: 40px 20px;
+    }
+    .account-form-section .auth-container form {
+        padding: 30px;
+    }
+    .account-form-section .auth-container form button.banner-btn.single-form-btn {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .account-form-section .auth-container {
+        width: 90%; /* Mobile screens ke liye width aur kam */
+        padding: 30px 15px;
+    }
+    .account-form-section .auth-container form {
+        padding: 20px;
+    }
+    .account-form-section .auth-container form input {
+        height: 40px;
+        padding: 0 15px;
+    }
+    .account-form-section .auth-container form button.banner-btn.single-form-btn {
+        padding: 0 40px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 38px;
+    }
+    .account-form-section .auth-container .other-option a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+
+/* Login page css  */
+.account-form-section .auth-container form .stay-sign-in {
+    display: flex;
+    align-items: center;
+}
+.account-form-section .auth-container form input#sign-in-checkbox {
+    margin-right: 5px;
+}
+.account-form-section .auth-container form a.password-recovery-btn {
+    color: #794aff;
+}
+.account-form-section .auth-container form button.banner-btn-1.single-form-btn {
+    padding: 0 80px;
+    margin-top: 20px;
+    justify-self: center;
+    border-radius: 6px;
+    background-color: #222;
+    height: 45px;
+    line-height: 43px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #222;
+}
+.account-form-section .auth-container .registration-link {
+    color: black;
+    font-size: 15px;
+}
+.account-form-section .auth-container .registration-link a {
+    color: #794AFF;
+    font-size: 15px;
+}
+
+/* footer section start  */
+
+/* Footer section start  */
+.rv-29-footer-sec {
+    position: relative;
+    background-color: #0E3055;
+}
+.rv-29-footer {
+    padding-top: 100px;
+}
+.rv-28-footer__logo {
+    z-index: 5;
+    position: relative;
+}
+.rv-29-footer .rv-28-footer__logo {
+    z-index: 5;
+    position: relative;
+}
+.rv-28-footer__logo a {
+    color: #1569FD;
+    font-size: 16px;
+}
+.rv-29-footer .rv-28-footer__logo a {
+    color: #38A9E0;
+}
+.rv-29-footer .rv-28-footer__logo .rv-26-logo-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6117647059);
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+.rv-28-footer__logo a {
+    color: #1569FD;
+    font-size: 16px;
+}
+.rv-29-footer .rv-28-footer__logo a {
+    color: #38A9E0;
+}
+.rv-28-footer__links, .rv-28-footer__courses, .rv-28-footer__newsletter {
+    z-index: 5;
+    position: relative;
+}
+.rv-29-footer .rv-28-footer__links, .rv-29-footer .rv-28-footer__courses, .rv-29-footer .rv-28-footer__newsletter {
+    z-index: 5;
+    position: relative;
+}
+.links_courses {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+}
+.rv-29-footer .links_courses {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+}
+.rv-28-footer__ul {
+    margin-top: 28px;
+    position: relative;
+    z-index: 5;
+}
+.rv-29-footer .rv-28-footer__ul {
+    margin-top: 28px;
+    position: relative;
+    z-index: 5;
+}
+.rv-28-footer__ul li {
+    color: rgba(255, 255, 255, 0.6117647059);
+    line-height: 2.5;
+    font-size: 15px;
+}
+.rv-29-footer .rv-28-footer__ul li {
+    color: rgba(255, 255, 255, 0.6117647059);
+    line-height: 2.5;
+}
+.rv-28-footer__ul li a {
+    color: rgba(255, 255, 255, 0.6117647059);
+    font-size: 15px;
+}
+.rv-29-footer .rv-28-footer__ul li a {
+    color: rgba(255, 255, 255, 0.6117647059);
+    font-size: 15px;
+}
+.rv-28-footer__links, .rv-28-footer__courses, .rv-28-footer__newsletter {
+    z-index: 5;
+    position: relative;
+}
+.rv-29-footer .rv-28-footer__links, .rv-29-footer .rv-28-footer__courses, .rv-29-footer .rv-28-footer__newsletter {
+    z-index: 5;
+    position: relative;
+}
+.links_courses {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+}
+.rv-29-footer .links_courses {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+}
+.rv-28-footer__ul {
+    margin-top: 28px;
+    position: relative;
+    z-index: 5;
+}
+.rv-29-footer .rv-28-footer__ul {
+    margin-top: 28px;
+    position: relative;
+    z-index: 5;
+}
+.rv-28-footer__links, .rv-28-footer__courses, .rv-28-footer__newsletter {
+    z-index: 5;
+    position: relative;
+}
+.rv-29-footer .rv-28-footer__links, .rv-29-footer .rv-28-footer__courses, .rv-29-footer .rv-28-footer__newsletter {
+    z-index: 5;
+    position: relative;
+}
+.footer_newsletter {
+    margin: 40px 0;
+    position: relative;
+    z-index: 5;
+}
+.rv-29-footer .footer_newsletter {
+    margin: 40px 0;
+    position: relative;
+    z-index: 5;
+}
+.footer_newsletter input {
+    background-color: #2e364e;
+    border-color: rgba(255, 255, 255, 0.2117647059);
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+.rv-29-footer .footer_newsletter input {
+    background-color: #18385c;
+    border-color: rgba(255, 255, 255, 0.2117647059);
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    outline: none;
+    border: none;
+}
+.rv-29-footer .footer_newsletter-btn {
+    color: white;
+    background-color: #38A9E0;
+    height: 50px;
+    width: 50px;
+    margin-left: -10px;
+    outline: none;
+    border: none;
+}
+.follow-us {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 35px;
+    position: relative;
+    z-index: 5;
+}
+.rv-29-footer .follow-us {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 35px;
+    position: relative;
+    z-index: 5;
+}
+.follow-us h6 {
+    margin-bottom: 0;
+}
+.follow-us-ul {
+    gap: 10px;
+}
+.rv-29-footer .follow-us-ul {
+    gap: 10px;
+}
+.follow-us-ul a {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2117647059);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.2s;
+    color: white;
+}
+.rv-29-footer .follow-us-ul a {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2117647059);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.2s;
+    color: white;
+}
+.follow-us-ul a i {
+    font-size: 14px;
+}
+.rv-28-small-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-top: 90px;
+    position: relative;
+    z-index: 5;
+    font-size: 15px;
+}
+.rv-29-footer .rv-28-small-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-top: 90px;
+    position: relative;
+    z-index: 5;
+}
+.rv-28-small-footer .copyright {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-29-footer .rv-28-small-footer .copyright {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-28-small-footer a {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-29-footer .rv-28-small-footer a {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-28-small-footer .privacy-policy {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-29-footer .rv-28-small-footer .privacy-policy {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-28-small-footer a {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+.rv-29-footer .rv-28-small-footer a {
+    color: rgba(255, 255, 255, 0.6117647059);
+}
+
+
+/*Styling Animated Cursor  */
+
+.custom-cursor {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.15s ease-out, background-color 0.15s ease-out;
+    z-index: 9999;
+    opacity: 0.6;
+}
+.cursor-grow {
+    transform: translate(-50%, -50%) scale(2);
+    background-color: rgba(0, 123, 255, 0.8);
+}
+.text-zoom {
+    transition: transform 0.2s ease-in-out;
+}
+.text-zoom:hover {
+    transform: scale(1.2);
+}
+
+/* Back to top button  */
+#toggleBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 26px;
+    background: none;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Pehle hidden hoga */
+    background-color: var(--royal-blue-light);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+}
+#backToTop:hover {
+    background-color: var(--royal-blue-light);
+    box-shadow: 0 0 25px var(--royal-blue-light);
+}
+
+/* Dark mode setting css  */
+.dark-mode{
+    background: var(--black-2);
+    color: var(--white-f);
+}
+.dark-mode .breadcrumb {
+    background: #1d1d1d;
+}
+.dark-mode .breadcrumb-title{
+    border-bottom: 1px solid rgba(233, 233, 233, 0.1)
+}
+.dark-mode .account-form-section{
+    background-color: #0505052d;
+}
+.dark-mode .auth-container{
+    background: #222;
+    color: #fff;
+}
+.dark-mode .auth-container .password-recovery-btn{
+    color: #fff;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}

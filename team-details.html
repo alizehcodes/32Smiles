@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="https://codebasket.xyz/template/mindmed-html/assets/img/tooth-icon-2.png" type="image/x-icon">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <title>32 Smiles</title>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <!-------------- header section start ---------------->
+    <nav>
+        
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                32<span>Smiles</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About Us</a>
+                  <div class="dropdown-content" style="color: #fff;">
+                    <a href="about.html">About Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="team-details.html">Team Details</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                  <a href="#">Services</a>
+                  <div class="dropdown-content">
+                      <a href="services.html">Services</a>
+                      <a href="professional.html">Professional Education</a>
+                      <a href="patient.html">Patient Education</a>
+                      <a href="research.html">Research</a>
+                      <a href="faqs.html">FAQ's</a>
+                      <a href="error.html">404</a>
+                  </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Blog</a>
+                  <div class="dropdown-content">
+                    <a href="blog.html">Blog</a>
+                    <a href="blog-details.html">Blog Details</a>
+                </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Shop</a>
+                  <div class="dropdown-content">
+                    <a href="shop.html">Shop</a>
+                    <a href="product.html">Product Details</a>
+                </div>
+              </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="menu-right">
+            <a href="appointment.html" class="book-btn">Appointment</a>
+        </div>
+        <button id="toggleBtn" style="font-size: 20px; display: none;">🌙</button>
+        <i class="fa-solid fa-bars hamburg"></i>
+    </div>
+    <button class="hamburg"><i class="fa fa-bars hamburg"></i></button>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel"></i>
+            </div>
+        </div>
+        
+    </nav>
+    <!-------------- header section end ------------------>
+
+    <!-------------- Breadcrumb section start ------------>
+    <div class="breadcrumb pt-120 pb-120" data-aos="fade-up">
+        <div class="container">
+            <h1 class="breadcrumb-title">Doctor Details</h1>
+            <ul class="breadcrumb-nav d-flex justify-content-center">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-sharp fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="current-page">
+                    <span class="dvdr"> /</span>
+                    <span>Our Team</span>
+                    <span class="dvdr"> /</span>
+                    <span>Doctor Details</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-------------- Breadcrumb section end -------------->
+
+    <!-------------- team details section start------------>
+    <div class="page-team-single"  data-aos="fade-up">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5">
+                    <div class="team-member-image">
+                        <figure class="image-anime">
+                            <img src="images/team-1.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- team meber details start  -->
+                    <div class="team-member-details">
+                    <div class="member-detail-header">
+                        <h2 class="text-anime-style-2">
+                            <div style="position: relative; display: inline-block;"  data-aos="fade-up">Dr.Ahsan Joe</div>
+                        </h2>
+                        <p>lead dentist</p>
+                    </div>
+                    <div class="member-detail-content"  data-aos="fade-up">
+                        <p>A Dantist will ask you about your current level of activity and any particular problems you're having. They will also examine your joints to assess your muscle strength and the range.</p>
+                    </div>
+                    <div class="member-detail-body"  data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <span>Position</span>
+                                Senior Dentist
+                            </li>
+                            <li>
+                                <span>Experience</span>
+                                08 Years
+                            </li>
+                            <li>
+                                <span>Email</span>
+                                @ahsanjoe@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="member-social-list">
+                        <ul>
+                            <li  data-aos="fade-up">
+                                <a href="https://www.facebook.com/%40DentalNewsPk/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li  data-aos="fade-up">
+                                <a href="https://www.linkedin.com/company/dentaleducationhub/?originalSubdomain=pk">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li  data-aos="fade-up">
+                                <a href="https://twitter.com/dentalofficeweb">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li  data-aos="fade-up">
+                                <a href="https://www.pinterest.com/ideas/dental-website/960012745002/">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <!-- team meber details end  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------- team details section end ------------->
+
+    <!-------------- member details section start---------->
+    <div class="about-member-details"  data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- about member info start  -->
+                    <div class="about-member-info"  data-aos="fade-up">
+                        <div class="member-info-title">
+                            <h2>personal info</h2>
+                        </div>
+                        <div class="member-info-content">
+                            <p>Dr.Ahsan Joe is a dedicated and compassionate general dentist with over a decade of experience in providing comprehensive dental care. She is committed to helping patients achieve optimal oral health through preventive and restorative treatments.</p>
+
+                            <p>Dr.Ahsan Joe is known for he gentle approach and ability to make patients feel comfortable during their visits.</p>
+                        </div>
+                    </div>
+                    <!-- about member info end  -->
+                    <!-- member winning award start  -->
+                    <div class="member-winning-awards"  data-aos="fade-up">
+                        <!-- winning award start  -->
+                        <div class="winning-award-content">
+                            <h2>Awards & Honor</h2>
+                            <p>You to resume or maintain a active and power independent life both at home & work.</p>
+                        </div>
+                        <!-- winning award end  -->
+                        <!-- winning award box start  -->
+                        <div class="winning-awards-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="winning-award-img img-box-1"  data-aos="fade-up">
+                                        <img src="icons/icon-award-1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="winning-award-img img-box-2"  data-aos="fade-up">
+                                        <img src="icons/icon-award-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="winning-award-img img-box-3"  data-aos="fade-up">
+                                        <img src="icons/icon-award-3.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="winning-award-img img-box-4"  data-aos="fade-up">
+                                        <img src="icons/icon-award-4.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- winning award box end  -->
+                    </div>
+                    <!-- member winning award end  -->
+                    
+                </div>
+                <div class="col-lg-6">
+                    <!-- team member skills bar start  -->
+                    <div class="team-member-skills"  data-aos="fade-up">
+                        <!-- member skills title start  -->
+                        <div class="member-skills-title"  data-aos="fade-up">
+                            <h2>professional skills</h2>
+                        </div>
+                        <!-- member skills title end  -->
+                        <!-- skils progress bar start -->
+                        <div class="skills-progress-bar">
+                            <!-- skill item start  -->
+                            <div class="skillbar" data-percent="84%">
+                                <div class="skill-data">
+                                    <div class="skill-title">patient care</div>
+                                    <div class="skill-no">84%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="count-bar" style="width: 84%;"></div>
+                                </div>
+                            </div>
+                            <!-- skill item end  -->
+                        </div>
+                        <!-- skils progress bar end -->
+                        <!-- skils progress bar start -->
+                        <div class="skills-progress-bar">
+                            <!-- skill item start  -->
+                            <div class="skillbar" data-percent="97%">
+                                <div class="skill-data">
+                                    <div class="skill-title">preventive dentistry</div>
+                                    <div class="skill-no">97%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="count-bar" style="width: 97%;"></div>
+                                </div>
+                            </div>
+                            <!-- skill item end  -->
+                        </div>
+                        <!-- skils progress bar end -->
+                        <!-- skils progress bar start -->
+                        <div class="skills-progress-bar">
+                            <!-- skill item start  -->
+                            <div class="skillbar" data-percent="93%">
+                                <div class="skill-data">
+                                    <div class="skill-title">restorative procedures</div>
+                                    <div class="skill-no">93%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="count-bar" style="width: 93%;"></div>
+                                </div>
+                            </div>
+                            <!-- skill item end  -->
+                        </div>
+                        <!-- skils progress bar end -->
+                        <!-- skils progress bar start -->
+                        <div class="skills-progress-bar">
+                            <!-- skill item start  -->
+                            <div class="skillbar" data-percent="89%">
+                                <div class="skill-data">
+                                    <div class="skill-title">cosmetic dentistry</div>
+                                    <div class="skill-no">89%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="count-bar" style="width: 89%;"></div>
+                                </div>
+                            </div>
+                            <!-- skill item end  -->
+                        </div>
+                        <!-- skils progress bar end -->
+                        <!-- skils progress bar start -->
+                        <div class="skills-progress-bar">
+                            <!-- skill item start  -->
+                            <div class="skillbar" data-percent="95%">
+                                <div class="skill-data">
+                                    <div class="skill-title">emergency dental care</div>
+                                    <div class="skill-no">95%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="count-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <!-- skill item end  -->
+                        </div>
+                        <!-- skils progress bar end -->
+                        <!-- skils progress bar start -->
+                        <div class="skills-progress-bar">
+                            <!-- skill item start  -->
+                            <div class="skillbar" data-percent="91%">
+                                <div class="skill-data">
+                                    <div class="skill-title">Radiography</div>
+                                    <div class="skill-no">91%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="count-bar" style="width: 91%;"></div>
+                                </div>
+                            </div>
+                            <!-- skill item end  -->
+                        </div>
+                        <!-- skils progress bar end -->
+                    </div>
+                    <!-- team member skills bar end  -->
+                    <!-- team sidebar cta box start  -->
+                    <div class="team-sidebar-cta">
+                        <!-- cta content start  -->
+                        <div class="cta-info-content"  data-aos="fade-up">
+                            <div class="icon-box">
+                                <img src="icons/icon-cta.svg" alt="">
+                            </div>
+                            <div class="cta-content">
+                                <h3  data-aos="fade-up">ready to start your journey to recovery?</h3>
+                                <p>Schedule your initial consultation today and start your journey towards a pain-free healthier smile Contact us now!</p>
+                                <!-- Appointment button start  -->
+                                <div class="cta-appointment-btn"  data-aos="fade-up">
+                                    <a href="appointment.html" class="btn-default">
+                                        Book Appointment
+                                        <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <!-- Appointment button end  -->
+                            </div>
+                        </div>
+                        <!-- cta content end  -->
+                    </div>
+                    <!-- team sidebar cta box end  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- member details section end------------>
+
+
+    <!-------------- footer section start -------------->
+    <footer class="rv-29-footer-sec rv-29-footer" >
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rv-28-footer__logo wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <a href="index.html">
+                            32<span>Smiles</span>
+                        </a>
+                        <p class="rv-26-logo-text">
+                          At 32Smiles Dental Hospital, we believe that a healthy smile is a happy smile! Our team of expert dentists is dedicated to providing high-quality, pain-free, and affordable dental care in a friendly and comfortable environment.
+                        </p>
+                        <a href="tel:+0123456789">
+                            <i class="fa fa-phone text-white"></i>
+                            +0123 456 789
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+                    <div class="rv-28-footer__links wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Quick Links</h4>
+                        <ul class="rv-28-footer__ul">
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Our Services</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="faqs.html">FAQs</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="copyright.html">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+                    <div class="rv-28-footer__courses wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Services</h4>
+                        <ul class="rv-28-footer__ul">
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Dental Care</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Cosmetic</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Implants</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Whitening</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Braces</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rv-28-footer__newsletters wow fadeInUp" data-wow-delay="0.55s" style="visibility: visible; animation-delay: 0.55s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Signup</h4>
+                        <div class="footer_newsletter">
+                            <form action="#" class="d-flex" id="newsletterForm">
+                                <input type="email" id="emailInput" required placeholder="Your Email..">
+                                <button type="submit" class="footer_newsletter-btn">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                                <p id="error-message" style="color: red; display: none; font-size: 14px; margin-top: 5px;"></p>
+                            </form>
+                        </div>
+                        <div class="follow-us">
+                            <h6 class="text-white">Follow Us</h6>
+                            <div class="follow-us-ul d-flex align-items-center">
+                                <a href="https://www.facebook.com/%40DentalNewsPk/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/dentaleducationhub/?originalSubdomain=pk">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rv-28-small-footer">
+                    <div class="copyright">
+                        @ 
+                        <a href="#">32smiles</a>
+                        All Rights Reserved
+                    </div>
+                    <div class="privacy-policy">
+                        <a href="copyright.html">Privacy Policy</a>
+                        |
+                        <a href="copyright.html">Terms of Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------- footer section end ---------------->
+
+    <!-- Back to top button  -->
+    <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Back to top button end  -->
+
+    <!-- JavaScript -->
+    <script>
+        
+// Footer form validation ------->
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const emailInput = document.getElementById("emailInput");
+    const errorMessage = document.getElementById("error-message");
+
+    // Regular expression to validate email format
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailPattern.test(emailInput.value)) {
+        errorMessage.style.display = "none";
+        alert("Signup successful! ✅");
+        emailInput.value = ""; // Clear input after successful validation
+    } else {
+        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.style.display = "block";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleBtn");
+    const navLinks = document.querySelector(".dropdown");
+    const hamburgIcon = document.querySelector(".hamburg");
+    const cancelIcon = document.querySelector(".cancel");
+    const dropdownLists = document.querySelectorAll(".dropdown-list");
+    const navContainerLinks = document.querySelector(".nav-container .links");
+    const submenuButtons = document.querySelectorAll(".submenu-toggle");
+
+    function updateMenuDisplay() {
+        if (window.innerWidth <= 768) {
+            hamburgIcon.style.display = "block";
+            cancelIcon.style.display = "none";
+            navContainerLinks.style.display = "none";
+            navLinks.style.display = "none";  // Ensure dropdown is hidden initially
+        } else {
+            hamburgIcon.style.display = "none";
+            cancelIcon.style.display = "none";
+            navContainerLinks.style.display = "flex";
+            navLinks.style.display = "none";  // Hide dropdown for large screens
+        }
+    }
+
+    updateMenuDisplay();  // Call on page load
+
+    // Open mobile menu
+    hamburgIcon.addEventListener("click", function () {
+        navLinks.style.display = "block";
+        setTimeout(() => {
+            navLinks.style.transform = "translateY(0)";
+        }, 10);
+        hamburgIcon.style.display = "none";
+        cancelIcon.style.display = "block";
+    });
+
+    // Close mobile menu
+    cancelIcon.addEventListener("click", function () {
+        navLinks.style.transform = "translateY(-500px)";
+        setTimeout(() => {
+            navLinks.style.display = "none";
+        }, 300);
+        cancelIcon.style.display = "none";
+        hamburgIcon.style.display = "block";
+    });
+
+    // Submenu toggle functionality
+    submenuButtons.forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        });
+    });
+
+    // Handle screen resize for responsiveness
+    window.addEventListener("resize", updateMenuDisplay);
+});
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    function animateProgressBars() {
+        let skillBars = document.querySelectorAll(".skillbar");
+        let windowHeight = window.innerHeight;
+
+        skillBars.forEach((bar) => {
+            let barPosition = bar.getBoundingClientRect().top;
+
+            if (barPosition < windowHeight - 100 && !bar.classList.contains("animated")) {
+                let targetWidth = bar.getAttribute("data-percent"); // Get percentage
+                let progressBar = bar.querySelector(".count-bar");
+                let skillNo = bar.querySelector(".skill-no");
+
+                let percent = parseInt(targetWidth); // Convert to number
+                let current = 0;
+                let interval = setInterval(() => {
+                    if (current >= percent) {
+                        clearInterval(interval);
+                    } else {
+                        current++;
+                        progressBar.style.width = current + "%";
+                        skillNo.textContent = current + "%";
+                    }
+                }, 15); // Smooth animation speed
+                
+                bar.classList.add("animated"); // Prevent multiple animations
+            }
+        });
+    }
+
+    window.addEventListener("scroll", animateProgressBars);
+});
+
+
+        // Cursor 
+    document.addEventListener("DOMContentLoaded", function () {
+    const cursor = document.querySelector(".custom-cursor");
+    const zoomElements = document.querySelectorAll(".text-zoom");
+
+    document.addEventListener("mousemove", function (e) {
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+
+    document.addEventListener("mousedown", function () {
+        cursor.classList.add("cursor-grow");
+    });
+
+    document.addEventListener("mouseup", function () {
+        cursor.classList.remove("cursor-grow");
+    });
+
+    zoomElements.forEach(element => {
+        element.addEventListener("mouseenter", function () {
+            this.style.transform = "scale(1.2)";
+        });
+
+        element.addEventListener("mouseleave", function () {
+            this.style.transform = "scale(1)";
+        });
+    });
+    });
+
+    // backtotopbutton 
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Jab user scroll karega, tab button show hoga
+    window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+    };
+
+    // Jab button click hoga, page smooth scroll hoga top par
+    backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    });
+    </script>
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({duration: 1500});
+    </script>
+    
+    
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>

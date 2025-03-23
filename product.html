@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="https://codebasket.xyz/template/mindmed-html/assets/img/tooth-icon-2.png" type="image/x-icon">
+
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <title>32 Smiles</title>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <!-------------- header section start ---------------->
+    <nav>
+          
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                32<span>Smiles</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About Us</a>
+                  <div class="dropdown-content" style="color: #fff;">
+                    <a href="about.html">About Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="team-details.html">Team Details</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                  <a href="#">Services</a>
+                  <div class="dropdown-content">
+                      <a href="services.html">Services</a>
+                      <a href="professional.html">Professional Education</a>
+                      <a href="patient.html">Patient Education</a>
+                      <a href="research.html">Research</a>
+                      <a href="faqs.html">FAQ's</a>
+                      <a href="error.html">404</a>
+                  </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Blog</a>
+                  <div class="dropdown-content">
+                    <a href="blog.html">Blog</a>
+                    <a href="blog-details.html">Blog Details</a>
+                </div>
+              </div>
+                <div class="link dropdown-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Shop</a>
+                  <div class="dropdown-content">
+                    <a href="shop.html">Shop</a>
+                    <a href="product.html">Product Details</a>
+                </div>
+              </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="menu-right">
+            <i class="fas fa-shopping-cart cart" data-bs-toggle="dropdown"> <span class="cart-count">0</span></i>
+                <!-- <ul class="dropdown-menu cart-items"></ul> -->
+            <a href="register.html" class="book-btn">Register</a>
+        </div>
+        <button id="toggleBtn" style="font-size: 20px; display: none;">🌙</button>
+        <i class="fa-solid fa-bars hamburg"></i>
+    </div>
+    <button class="hamburg"><i class="fa fa-bars hamburg"></i></button>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel"></i>
+            </div>
+        </div>
+        
+    </nav>
+    <!-------------- header section end ------------------>
+
+    <!-------------- Breadcrumb section start ------------>
+    <div class="breadcrumb pt-120 pb-120" data-aos="fade-up">
+        <div class="container">
+            <h1 class="breadcrumb-title">Product Details</h1>
+            <ul class="breadcrumb-nav d-flex justify-content-center">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-sharp fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="current-page">
+                    <span class="dvdr"> /</span>
+                    <span>Product Details</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-------------- Breadcrumb section end -------------->
+    
+    <!----------- product details section start----------->
+    <!-- <section class="product-details section-spacing">
+        <div class="container">
+            <div class="row g-0 align-items-start justify-content-center">
+                <div class="col-lg-6 col-12 col-xxs-12">
+                    <div class="product-details-imgs">
+                        <div class="product-details-img-slider-1 swiper swiper-inititialized swiper-vertical swiper-autoheight swiper-backface-hidden swiper-thumbs" id="product-details-img-slider-1">
+                            <div class="swiper-wrapper" id="swiper-wrapper-9d9c10d79710836c101" aria-live="polite" style="height: 80px; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
+                                <div class="swiper-slide swiper-slide-visible swiper-slide" role="group" aria-label="1 / 4" style="margin-bottom: 10px;">
+                                    <div class="product-details-thumb">
+                                        <img src="https://codebasket.xyz/template/mindmed-html/assets/img/rv-product-details-1.png" alt="Product Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 4" style="margin-bottom: 10px;">
+                                    <div class="product-details-thumb">
+                                        <img src="https://codebasket.xyz/template/mindmed-html/assets/img/rv-product-details-2.png" alt="Product Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible" role="group" aria-label="3 / 4" style="margin-bottom: 10px;">
+                                    <div class="product-details-thumb">
+                                        <img src="https://codebasket.xyz/template/mindmed-html/assets/img/rv-product-details-3.png" alt="Product Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-thumb-active" role="group" aria-label="4 / 4" style="margin-bottom: 10px;">
+                                    <div class="product-details-thumb">
+                                        <img src="https://codebasket.xyz/template/mindmed-html/assets/img/rv-product-details-4.png" alt="Product Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </section> -->
+    <section class="product-details-sec" data-aos="fade-up">
+    <div class="container">
+        <!-- <h2 class="text-center mt-5">Dental Products</h2> -->
+        
+        <div class="product-container">
+            <div class="product-images">
+                <img src="images/rv-12-pro-1.webp" class="product-img" alt="Product Image 1" onclick="changeProduct('images/rv-12-pro-1.webp', 'Medical Thermometer', 'An electronic device that uses ultrasonic vibrations to remove plaque and tartar from teeth, making dental cleaning more effective and safe.')">
+                <img src="images/rv-12-pro-2.webp" class="product-img" alt="Product Image 2" onclick="changeProduct('images/rv-12-pro-2.webp', 'X-Ray Machine', 'A complete set containing implant drills, screws, and other essential tools used for placing dental implants.')">
+                <img src="images/product-1.png" class="product-img" alt="Product Image 3" onclick="changeProduct('images/product-1.png', 'Stethoscope', 'A thin metal instrument used by dentists to detect cavities, plaque buildup, and other dental issues.')">
+            </div>
+            <div>
+                <img id="main-product-image" src="images/rv-12-pro-1.webp" class="img-fluid mb-2 align-items-center" alt="Main Product Image" width="300">
+                <div class="product-details">
+                    <h3 id="product-title">Medical Thermometer</h3>
+                    <p id="product-description">An electronic device that uses ultrasonic vibrations to remove plaque and tartar from teeth, making dental cleaning more effective and safe.</p>
+                    <p class="rating">★★★★★ (4.8/5)</p>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1" class="form-control w-25 d-inline-block">
+                    <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    
+                </div>
+            </div>
+            <div class="product-images">
+                <img src="images/rv-12-pro-4.webp" class="product-img" alt="Product Image 1" onclick="changeProduct('images/rv-12-pro-4.webp', 'Blood Pressure Guage', 'Thin, flexible files used for cleaning and shaping root canals during endodontic (root canal) treatment.')">
+                <img src="images/rv-12-pro-5.webp" class="product-img" alt="Product Image 2" onclick="changeProduct('images/rv-12-pro-5.webp', 'Sphygmomanometer', 'A protective coating applied to teeth to reduce cavities, strengthen enamel, and minimize sensitivity.')">
+                <img src="images/rv-12-pro-7.webp" class="product-img" alt="Product Image 3" onclick="changeProduct('images/rv-12-pro-7.webp', 'China Stethoscope', 'A kit that includes braces, rubber bands, wires, and other tools used to straighten and align teeth properly.')">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="container">
+        <div class="col-12">
+            <div class="product-details-bottom-text">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <button class="nav-link active">Description</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link">Reviews</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane">
+                        <div class="product-details-descr">
+                            <h6 class="product-details-bottom-title">Product Description</h6>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, placeat in sed reiciendis explicabo facilis? Nobis, velit. Dolore, eaque molestias?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane">
+                        <div class="product-detail-review">
+                            <div class="review-overview">
+                                <div class="average-rating-area">
+                                    <h3>
+                                        <span>4.3</span>
+                                        <span>/5</span>
+                                    </h3>
+                                    <span class="rating-amount">24 ratings</span>
+                                </div>
+                                <div class="review-breakdown">
+                                    <ul class="individual-star-breakdown">
+                                        <li class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <div class="bar">
+                                                <div class="filled"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="each-star-amount">320</div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section> -->
+    <!----------- product details section end ------------>
+
+    <!-------------- testimonial section start --------->
+    <section class="testimonial" data-aos="fade-up">
+        <div class="container">
+
+          <div class="row">
+            <div class="testimonial-title">
+              <h2 class="testimonial-title-text">
+                Customer Reviews
+              </h2>
+              <div class="testimonial-title-btns">
+                <button class="testimonial-title-btn-left testimonial-btn-left" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-a4b65bba259ad78">
+                  <i class="fa fa-arrow-left"></i>
+                </button>
+                <button class="testimonial-title-btn-right testimonial-btn-right" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-a4b65bba259ad78">
+                  <i class="fa fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-swiper-container swiper-container swiper-inititialized swiper-horizontal swiper-free-mode swiper-backface-hidden">
+
+            <div class="swiper-wrapper" id="swiper-wrapper" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-757.333px, 0px, 0px); transition-delay: 0ms;">
+
+              <div class="swiper-slide" role="group" aria-label="1 / 6" data-super-slide-index="0" style="width: 358.667px; margin-right: 20px;">
+
+                <div class="testimonial-item">
+                  <div class="testimonial-item-stars">
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                  </div>
+                  <p class="testimonial-item-text">The Oral-B Pro 1000 is a great investment for oral health! The oscillating bristles clean much better than a manual toothbrush, and the built-in timer ensures I brush for the recommended two minutes a fantastic product for deep cleaning!</p>
+                  <div class="testimonial-item-author">
+                    <img src="images/testimonial-author-1.jpg" alt="lee mark">
+                    <span>
+                      Haroon Irfan
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 6" data-super-slide-index="1" style="width: 358.667px; margin-right: 20px;">
+
+                
+                <div class="testimonial-item">
+                  <div class="testimonial-item-stars">
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                  </div>
+                  <p class="testimonial-item-text">Listerine Total Care does an amazing job at keeping my breath fresh and my gums healthy. It has a strong taste, which might not be for everyone, but I feel like it really kills bacteria and leaves my mouth feeling clean it’s a great product for overall oral hygiene!</p>
+                  <div class="testimonial-item-author">
+                    <img src="images/testimonial-author-2.jpg" alt="lee mark">
+                    <span>
+                      Hanson David
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 6" data-super-slide-index="2" style="width: 358.667px; margin-right: 20px;">
+
+                
+                <div class="testimonial-item">
+                  <div class="testimonial-item-stars">
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                  </div>
+                  <p class="testimonial-item-text">If you have sensitive teeth, Sensodyne Rapid Relief is a game-changer! Within a few days of using it, I felt a significant reduction in tooth sensitivity. It’s a must-have for anyone struggling with sensitivity issues! The only downside is the high price</p>
+                  <div class="testimonial-item-author">
+                    <img src="images/testimonial-author-3.jpg" alt="lee mark">
+                    <span>
+                      Miles Tone
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 6" data-super-slide-index="3" style="width: 358.667px; margin-right: 20px;">
+
+                
+                <div class="testimonial-item">
+                  <div class="testimonial-item-stars">
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                  </div>
+                  <p class="testimonial-item-text">The Crest 3D Whitestrips are one of the best whitening products I’ve tried! They’re easy to apply and give visible results within a week. I love how they remove stains without damaging enamel. Overall, a great product for a brighter smile!</p>
+                  <div class="testimonial-item-author">
+                    <img src="images/testimonial-author-4.webp" alt="lee mark">
+                    <span>
+                      Anum Khan
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide" role="group" aria-label="5 / 6" data-super-slide-index="4" style="width: 358.667px; margin-right: 20px;">
+
+                
+                <div class="testimonial-item">
+                  <div class="testimonial-item-stars">
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                  </div>
+                  <p class="testimonial-item-text">I’ve been using Colgate Optic White for a few months now, and I can see a noticeable difference in my teeth! My smile looks brighter, and the freshness lasts all day. Highly recommended if you want a whiter smile without harsh chemicals!</p>
+                  <div class="testimonial-item-author">
+                    <img src="images/testimonial-author-5.webp" alt="lee mark">
+                    <span>
+                      Moeez Ali
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="swiper-slide" role="group" aria-label="6 / 6" data-super-slide-index="5" style="width: 358.667px; margin-right: 20px;">
+
+                
+                <div class="testimonial-item">
+                  <div class="testimonial-item-stars">
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                    <span>
+                      <img src="images/rv-27-testimoial-star.webp" alt="star">
+                    </span>
+                  </div>
+                  <p class="testimonial-item-text">This is hands down the best toothbrush I’ve ever used! The Philips Sonicare DiamondClean provides an incredibly deep clean, and my teeth feel just as fresh as they do after a dental visit. The different modes are a nice bonus. it’s totally worth it!</p>
+                  <div class="testimonial-item-author">
+                    <img src="images/testimonial-author-6.webp" alt="lee mark">
+                    <span>
+                      Amna Sheikh
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+
+        </div>
+
+    </section>
+    <!-------------- testimonial section end ----------->
+
+    <!-------------- video section start ----------------->
+    <div class="inner-video infos-video" data-aos="fade-up">
+        <div class="video">
+            <div class="container">
+                <div class="outer-container">
+                    <span class="btn-wrapper">
+                        <a href="https://www.youtube.com/watch?si=fgEd0VhEzqiiSmIN&v=PWbSLgZWBhU&feature=youtu.be" data-fslightbox>
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </span>
+                    <h3>Dental Treatment</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------- video section end ------------------->
+
+    <!-------------- related section start --------------->
+    <section class="related-prod section-spacing" data-aos="fade-up">
+        <div class="container">
+
+            <div class="section-heading related-prod-heading">
+                <div class="section-heading-left">
+                    <h6 class="section-subtitle">New Products</h6>
+                    <h2 class="related-prod-title">Featured Products</h2>
+                </div>
+                <div class="section-heading-right">
+                    <a href="shop.html" class="banner-btn df-btn">Shop all Products</a>
+                </div>
+            </div>
+
+            <div class="row related-prod-row g-30 justify-content-center">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="product rv-12-product">
+                        <div class="product-img rv-12-product-img">
+                            <a href="product.html">
+                                <img src="images/product-6.webp" alt="Product">
+                            </a>
+                            <span class="product-tag">-20%</span>
+                            <div class="product-actions overlay">
+                                <button class="quick-view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button class="add-to-whishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="compare">
+                                    <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-text">
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="product-title">
+                                <a href="#">Otoscope</a>
+                            </h5>
+                            <p class="inner-product-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ad.
+                            </p>
+                            <div class="product-bottom">
+                                <span class="product-price">
+                                    <span class="prev-price">Rs 6000</span>
+                                    <span class="current-price">Rs 5500</span>
+                                </span>
+                                <a href="product.html">
+                                <button class="product-cart-btn">
+                                    <span class="icon"></span>
+                                    Add To Cart
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="product rv-12-product">
+                        <div class="product-img rv-12-product-img">
+                            <a href="product.html">
+                                <img src="images/rv-12-pro-7.webp" alt="Product">
+                            </a>
+                            <span class="product-tag">-20%</span>
+                            <div class="product-actions overlay">
+                                <button class="quick-view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button class="add-to-whishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="compare">
+                                    <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-text">
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="product-title">
+                                <a href="#">China Stethoscope</a>
+                            </h5>
+                            <p class="inner-product-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ad.
+                            </p>
+                            <div class="product-bottom">
+                                <span class="product-price">
+                                    <span class="prev-price">Rs 3000</span>
+                                    <span class="current-price">Rs 2000</span>
+                                </span>
+                                <a href="product.html">
+                                <button class="product-cart-btn">
+                                    <span class="icon"></span>
+                                    Add To Cart
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="product rv-12-product">
+                        <div class="product-img rv-12-product-img">
+                            <a href="product.html">
+                                <img src="images/product-8.webp" alt="Product">
+                            </a>
+                            <span class="product-tag">-20%</span>
+                            <div class="product-actions overlay">
+                                <button class="quick-view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button class="add-to-whishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="compare">
+                                    <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-text">
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="product-title">
+                                <a href="#">Poison</a>
+                            </h5>
+                            <p class="inner-product-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ad.
+                            </p>
+                            <div class="product-bottom">
+                                <span class="product-price">
+                                    <span class="prev-price">Rs 6000</span>
+                                    <span class="current-price">Rs 5500</span>
+                                </span>
+                                <a href="product.html">
+                                <button class="product-cart-btn">
+                                    <span class="icon"></span>
+                                    Add To Cart
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="product rv-12-product">
+                        <div class="product-img rv-12-product-img">
+                            <a href="product.html">
+                                <img src="images/product-2.png" alt="Product">
+                            </a>
+                            <span class="product-tag">-20%</span>
+                            <div class="product-actions overlay">
+                                <button class="quick-view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button class="add-to-whishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="compare">
+                                    <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-text">
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="product-title">
+                                <a href="#">Dental Drill</a>
+                            </h5>
+                            <p class="inner-product-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ad.
+                            </p>
+                            <div class="product-bottom">
+                                <span class="product-price">
+                                    <span class="prev-price">Rs 8500</span>
+                                    <span class="current-price">Rs 6999</span>
+                                </span>
+                                <a href="product.html">
+                                <button class="product-cart-btn">
+                                    <span class="icon"></span>
+                                    Add To Cart
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-------------- related section end ----------------->
+
+    <!-------------- footer section start ---------------->
+    <footer class="rv-29-footer-sec rv-29-footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rv-28-footer__logo wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <a href="index.html">
+                            32<span>Smiles</span>
+                        </a>
+                        <p class="rv-26-logo-text">
+                            At 32Smiles Dental Hospital, we believe that a healthy smile is a happy smile! Our team of expert dentists is dedicated to providing high-quality, pain-free, and affordable dental care in a friendly and comfortable environment.
+                        </p>
+                        <a href="tel:+0123456789">
+                            <i class="fa fa-phone text-white"></i>
+                            +0123 456 789
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+                    <div class="rv-28-footer__links wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Useful Links</h4>
+                        <ul class="rv-28-footer__ul">
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Our Services</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="faqs.html">Faqs</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="copyright.html">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+                    <div class="rv-28-footer__courses wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Our Services</h4>
+                        <ul class="rv-28-footer__ul">
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Dental Care</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Cosmetic</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Implants</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Whitening</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="services.html">Braces</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rv-28-footer__newsletters wow fadeInUp" data-wow-delay="0.55s" style="visibility: visible; animation-delay: 0.55s; animation-name: fadeInUp;">
+                        <h4 class="links_courses">Signup</h4>
+                        <div class="footer_newsletter">
+                            <form action="#" class="d-flex" id="newsletterForm">
+                                <input type="email" id="emailInput" required placeholder="Your Email..">
+                                <button type="submit" class="footer_newsletter-btn">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                                <p id="error-message" style="color: red; display: none; font-size: 14px; margin-top: 5px;"></p>
+                            </form>
+                        </div>
+                        <div class="follow-us">
+                            <h6 class="text-white">Follow Us</h6>
+                            <div class="follow-us-ul d-flex align-items-center">
+                                <a href="https://www.facebook.com/%40DentalNewsPk/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/dentaleducationhub/?originalSubdomain=pk">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rv-28-small-footer">
+                    <div class="copyright">
+                        @ 
+                        <a href="#">32smiles</a>
+                        All Rights Reserved
+                    </div>
+                    <div class="privacy-policy">
+                        <a href="copyright.html">Privacy Policy</a>
+                        |
+                        <a href="copyright.html">Terms of Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------- footer section end ------------------>
+
+    <!-- Back to top button  -->
+    <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Back to top button end  -->
+
+
+    <!-- JavaScript -->
+    <script>
+    
+// Footer form validation ------->
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const emailInput = document.getElementById("emailInput");
+    const errorMessage = document.getElementById("error-message");
+
+    // Regular expression to validate email format
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailPattern.test(emailInput.value)) {
+        errorMessage.style.display = "none";
+        alert("Signup successful! ✅");
+        emailInput.value = ""; // Clear input after successful validation
+    } else {
+        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.style.display = "block";
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleBtn");
+    const navLinks = document.querySelector(".dropdown");
+    const hamburgIcon = document.querySelector(".hamburg");
+    const cancelIcon = document.querySelector(".cancel");
+    const dropdownLists = document.querySelectorAll(".dropdown-list");
+    const navContainerLinks = document.querySelector(".nav-container .links");
+    const submenuButtons = document.querySelectorAll(".submenu-toggle");
+
+    function updateMenuDisplay() {
+        if (window.innerWidth <= 768) {
+            hamburgIcon.style.display = "block";
+            cancelIcon.style.display = "none";
+            navContainerLinks.style.display = "none";
+            navLinks.style.display = "none";  // Ensure dropdown is hidden initially
+        } else {
+            hamburgIcon.style.display = "none";
+            cancelIcon.style.display = "none";
+            navContainerLinks.style.display = "flex";
+            navLinks.style.display = "none";  // Hide dropdown for large screens
+        }
+    }
+
+    updateMenuDisplay();  // Call on page load
+
+    // Open mobile menu
+    hamburgIcon.addEventListener("click", function () {
+        navLinks.style.display = "block";
+        setTimeout(() => {
+            navLinks.style.transform = "translateY(0)";
+        }, 10);
+        hamburgIcon.style.display = "none";
+        cancelIcon.style.display = "block";
+    });
+
+    // Close mobile menu
+    cancelIcon.addEventListener("click", function () {
+        navLinks.style.transform = "translateY(-500px)";
+        setTimeout(() => {
+            navLinks.style.display = "none";
+        }, 300);
+        cancelIcon.style.display = "none";
+        hamburgIcon.style.display = "block";
+    });
+
+    // Submenu toggle functionality
+    submenuButtons.forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        });
+    });
+
+    // Handle screen resize for responsiveness
+    window.addEventListener("resize", updateMenuDisplay);
+});
+
+
+        // Cursor 
+    document.addEventListener("DOMContentLoaded", function () {
+    const cursor = document.querySelector(".custom-cursor");
+    const zoomElements = document.querySelectorAll(".text-zoom");
+
+    document.addEventListener("mousemove", function (e) {
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+
+    document.addEventListener("mousedown", function () {
+        cursor.classList.add("cursor-grow");
+    });
+
+    document.addEventListener("mouseup", function () {
+        cursor.classList.remove("cursor-grow");
+    });
+
+    zoomElements.forEach(element => {
+        element.addEventListener("mouseenter", function () {
+            this.style.transform = "scale(1.2)";
+        });
+
+        element.addEventListener("mouseleave", function () {
+            this.style.transform = "scale(1)";
+        });
+    });
+    });
+
+    // backtotopbutton 
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Jab user scroll karega, tab button show hoga
+    window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+    };
+
+    // Jab button click hoga, page smooth scroll hoga top par
+    backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    });
+
+    
+    // product 
+    let cart = [];
+        
+        function changeProduct(imageSrc, title, description) {
+            document.getElementById("main-product-image").src = imageSrc;
+            document.getElementById("product-title").textContent = title;
+            document.getElementById("product-description").textContent = description;
+        }
+        
+        function addToCart() {
+            let productTitle = document.getElementById("product-title").textContent;
+            let quantity = document.getElementById("quantity").value;
+            cart.push({ title: productTitle, quantity: quantity });
+            document.querySelector(".cart-count").textContent = cart.length;
+            console.log("Cart:", cart);
+        }
+        
+        function addToWishlist() {
+            let productTitle = document.getElementById("product-title").textContent;
+            document.querySelector(".wishlist-count").textContent = wishlist.length;
+            console.log("Added to Wishlist:", productTitle);
+        }
+
+    // Add to cart button 
+        function updateCart() {
+            let cartCount = document.getElementById("cart-count");
+            let cartItems = document.getElementById("cart-items");
+            cartItems.innerHTML = "";
+            cart.forEach((item, index) => {
+                let li = document.createElement("li");
+                li.innerHTML = `${item.title} (x${item.quantity}) <button onclick="removeFromCart(${index})">Remove</button>`;
+                cartItems.appendChild(li);
+            });
+            cartCount.textContent = cart.length;
+        }
+        
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+        
+        function toggleCart() {
+            document.getElementById("cart-dropdown").classList.toggle("active");
+        }
+        
+        function toggleWishlist() {
+            alert("Wishlist feature coming soon!");
+        }
+
+
+
+
+        function updateCart() {
+            document.querySelector(".cart-count").textContent = cart.length;
+            let cartList = document.querySelector(".cart-items");
+            cartList.innerHTML = "";
+            cart.forEach((item, index) => {
+                cartList.innerHTML += `<li>${item.title} (x${item.quantity}) <button onclick="removeCartItem(${index})">Remove</button></li>`;
+            });
+        }
+
+        function updateWishlist() {
+            document.querySelector(".wishlist-count").textContent = wishlist.length;
+            let wishlistList = document.querySelector(".wishlist-items");
+            wishlistList.innerHTML = "";
+            wishlist.forEach((item, index) => {
+                wishlistList.innerHTML += `<li>${item} <button onclick="removeWishlistItem(${index})">Remove</button></li>`;
+            });
+        }
+
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+        
+        function removeWishlistItem(index) {
+            wishlist.splice(index, 1);
+            updateWishlist();
+        }
+
+// Testimonials 
+
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".testimonial-swiper-container", {
+      loop: true, // Infinite Loop
+        autoplay: {
+        delay: 3000, // 3 sec auto-scroll
+        disableOnInteraction: false, // Manual interaction ke baad bhi autoplay chalay
+        },
+        navigation: {
+        nextEl: ".testimonial-title-btn-right",
+        prevEl: ".testimonial-title-btn-left",
+        },
+      slidesPerView: 1, // Ek slide ek waqt me
+      spaceBetween: 20, // Space between slides
+        breakpoints: {
+        768: { slidesPerView: 2 }, // Tablet
+        1024: { slidesPerView: 3 }, // Desktop
+        },
+    });
+    });
+
+
+
+    </script>
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({duration: 1500});
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+</body>
+</html>
